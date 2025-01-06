@@ -1,0 +1,95 @@
+body {
+  background-image: url('/images/geometry-blue-turquoise-abstraction2-png.png');
+  background-size: cover; /* Scale the image */
+  background-position: center top; /* Align the image at the top */
+  background-attachment: fixed; /* Keep the background fixed during scrolling */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Hide the overflowing parts */
+}
+
+
+  .login-box {
+    background-image: url('/images/square-lines-gradient-pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    max-width: 150px;
+  }
+
+  .login-form .form-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .login-form .form-check-input {
+    transform: scale(1.4);
+    margin-right: 0.5rem;
+    border: none;
+  }
+  .login-form .form-check-label {
+    margin-right: 2rem;
+  }
+
+  .login-form .form-check .forgot-password {
+    margin-left: 2rem;
+  }
+
+  .login-form .form-control {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    padding-left: 0;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: #ffffff;
+  }
+
+  .login-form .form-control::placeholder {
+    color: #bdccdf;
+  }
+
+  .login-form .form-control:focus {
+    box-shadow: none;
+    border-color: #00A8FF;
+  }
+
+  .forgot-txt {
+    color: #02d9ffdb;
+  }
+  .forgot-txt:hover {
+    color: #00d9ff;
+  }
+  
+.btn-small {
+    font-size: 14px; /* Decrease text size */
+    padding: 5px 10px; /* Adjust padding for smaller dimensions */
+    width: auto; /* Make width fit the content */
+    height: auto; /* Adjust height automatically */
+    background-color: #41E998;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    border: none;
+    color: white;
+  }
+  
+  .btn-small:hover, 
+  .btn-small:focus {
+    background-color: #17be41; 
+    color: white;
+  }
+  
+  .btn-small:active {
+    background-color: #108d31;
+}
