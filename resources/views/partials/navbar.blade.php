@@ -4,25 +4,35 @@
     </form>
     <div class="navbar-collapse collapse">
         <button class="toggle-btn" type="button">  
-            <i class="lni lni-menu"></i>
+            <i class="bi bi-list"></i>
         </button>
         <ul class="navbar-nav ms-auto gap-3">
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <i class="lni lni-search"></i>
+                    <i class="bi bi-search"></i>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <i class="lni lni-timer"></i>
+                    <i class="bi bi-moon"></i>
                 </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">
-                    <i class="lni lni-alarm"></i>
+                    <i class="bi bi-arrows-fullscreen"></i>
                 </a>
             </li>
-            <li class="nav-item dropdown mr-2">
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-stopwatch"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">
+                    <i class="bi bi-bell"></i>
+                </a>
+            </li>
+            <li class="nav-item dropdown me-4">
                 <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
                     <img src="{{asset('images/dokterhama-logo-rat.png')}}" class="avatar img-fluid" alt="">
                 </a>

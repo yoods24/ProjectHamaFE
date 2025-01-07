@@ -1,10 +1,10 @@
 <aside class="sidebar" id="sidebar">
     <div class="d-flex">
         <div class="sidebar-logo">
-            <img src="{{asset('images/DokterHama-logo-mini.png')}}" alt="">
+            <img onclick='window.location.reload()' src="{{asset('images/DokterHama-logo-mini.png')}}" alt="">
         </div>
         <div class="sidebar-mini-logo">
-            <img src="{{asset('images/dokterhama-logo-rat.png')}}" alt="">
+            <img onclick='window.location.reload()'; src="{{asset('images/dokterhama-logo-rat.png')}}" alt="">
         </div>
     </div>
     <hr style="width: 100%">
@@ -25,7 +25,7 @@
         <li class="sidebar-item">
             <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                 data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                <i class="lni lni-protection"></i>
+                <i class="bi bi-bar-chart-fill"></i>                
                 <span>Sales</span>
             </a>
             <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
@@ -41,11 +41,12 @@
             </ul>
         </li>
 
+{{--  
         <li class="sidebar-item">
             <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                 data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
                 <i class="lni lni-layout"></i>
-                <span>Multi Level</span>
+                <span>Technician</span>
             </a>
             <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                 <li class="sidebar-item">
@@ -64,10 +65,11 @@
                 </li>
             </ul>
         </li>
+--}}
         <li class="sidebar-item">
             <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
                 data-bs-target="#service" aria-expanded="false" aria-controls="service">
-                <i class="lni lni-protection"></i>
+                <i class="bi bi-window-sidebar"></i>                
                 <span>Service Supervisor</span>
             </a>
             <ul id="service" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
@@ -79,6 +81,30 @@
                 </li>
             </ul>
         </li>
+
+        <li class="sidebar-item">
+            <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+                data-bs-target="#technician" aria-expanded="false" aria-controls="technician">
+                <i class="bi bi-check2-circle"></i>
+                <span>Technician</span>
+            </a>
+            <ul id="technician" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Schedule</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Claims</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Report</a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">Item</a>
+                </li>
+            </ul>
+        </li>
+
+    </ul>
         <li class="sidebar-item">
             <a href="#" class="sidebar-link">
                 <i class="lni lni-cog"></i>
@@ -86,11 +112,13 @@
             </a>
         </li>
     </ul>
+
+    
     <div class="sidebar-footer p-3">
         <div class="container-fluid d-flex flex-column align-items-center justify-content-center text-center" id="software-problem-container">
             <h6 class="h6"><strong>Software Problem?</strong></h6>
             <p>Designed to sharpened your decision and effectuate your workflow</p>
-            <button class="btn btn-success">REACH US OUT</button>
+            <button class="reach-us-btn">REACH US OUT</button>
         </div>
     </div>
 </aside>

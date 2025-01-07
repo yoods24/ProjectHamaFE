@@ -44,6 +44,7 @@ body {
     transition: all 0.35s ease-in-out;
     background-color: #ececec;
     min-width: 0;
+    
 }
 
 #sidebar {
@@ -80,19 +81,27 @@ body {
     font-size: 1.5rem;
     color: #000000;
 }
-
+.reach-us-btn {
+    color: white;
+    border-radius: 7px;
+}
 .sidebar-logo {
     margin: auto 0;
+    cursor: pointer;
 }
 .sidebar-logo img {
     padding-top: 10px; 
     padding-left: 10px;
     margin-left: 1em;
+    cursor: pointer;
+
 }
 .sidebar-mini-logo img{
     padding-top: 10px; 
     width: 70px;
-    margin: 0 auto
+    margin: 0 auto;
+    cursor: pointer;
+
 }
 
 
@@ -146,7 +155,8 @@ a.sidebar-link {
 }
 
 a.sidebar-link:hover {
-    background-color: rgba(21, 58, 12, 0.075);
+    transition: 0.3s;
+    background-color: rgba(107, 244, 179, 0.50);
     border-left: 3px solid #02130d;
 }
 
@@ -236,7 +246,6 @@ a.sidebar-link:hover {
     z-index: 2000;
 }
 
-
 @media (max-width: 768px) {
 
     .form-group {
@@ -249,7 +258,10 @@ a.sidebar-link:hover {
         margin-bottom: 0.5rem; /* Add spacing below the label */
         text-align: left;
     }
-
+    .main-content .mobile-container {
+        margin: 0px;
+        padding: 0px;
+    }
     .form-control-wrapper {
         width: 100%;
     }
@@ -266,11 +278,19 @@ a.sidebar-link:hover {
         display: block;
     }
 }
+.mobile-container{
+    margin: 10px;
+    padding: 0px;
+}
 
 @media (max-width: 576px) {
 
     #sidebar {
         display: none;
+    }
+
+    .mobile-container{
+        margin: 10px 0px;
     }
 
     .toggle-btn {
@@ -302,6 +322,14 @@ a.sidebar-link:hover {
     .btn-container {
         flex-direction: column;
         align-items: stretch;
+    }
+
+    .table td, .table th {
+        padding: 10px 5px;
+    }
+    .form-select, .form-control {
+        width: 100%;
+        margin-bottom: 5px;
     }
 
     .btn-container button {
@@ -451,16 +479,7 @@ a.sidebar-link:hover {
 .progress-percentage{
 color: #4FD1C5;
 }
-/* Adjust padding and spacing for small devices */
-@media (max-width: 576px) {
-    .table td, .table th {
-        padding: 10px 5px;
-    }
-    .form-select, .form-control {
-        width: 100%;
-        margin-bottom: 5px;
-    }
-}
+
 table thead .input-group.date {
     width: 100%; /* Full width for the date picker */
 }

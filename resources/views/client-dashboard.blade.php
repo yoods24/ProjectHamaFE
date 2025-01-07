@@ -3,18 +3,18 @@
 @section('Sales', 'Dashboard Page')
 
 @section('content')
-    <div class="container-fluid m-4">
-        <div class="row d-flex gap-3">
+    <div class="mobile-container container-fluid">
+        <div class="row d-flex gap-3 mobile-container">
             <div class="col-lg-5 col-sm-10 bg-white p-3 rounded graph-container">
                 <div class="row d-flex flex-column">
-                    <div class=" container col w-100 bg-success p-3 rounded ">
+                    <div class="container col w-100 bg-success p-3 rounded ">
                         test
                     </div>
                     <div class="col d-flex flex-column">
                         <p><strong>Project Taken</strong></p>
                         <p class="text-secondary"><span class="text-success">(+23)</span> than last week</p>
                     </div>
-                    <div class="col d-flex justify-content-between ">
+                    <div class="col d-flex justify-content-between">
                         <div class="d-flex flex-column">
                             <p><span><i class="fa fa-wallet action-icon"></i></span>Contract</p>
                             <p>73</p>
@@ -57,7 +57,7 @@
             <div class="col-lg-6 col-sm-10 bg-white p-3 rounded">
                 test
             </div>
-        <div class="col-lg-11 col-md-10 bg-white mt-1 p-3 rounded">
+        <div class="col-lg-11 col-md-10 col-sm-10 bg-white mt-1 p-3 rounded">
             <div class="table-responsive">
                 <h5>Projects</h5>
                 <p class="text-secondary text-align-start"> <span><i class="fa fa-check "></i></span><strong>30 Done</strong> This Month</p>

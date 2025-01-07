@@ -63,7 +63,6 @@
                     <div class="input-icon"><i class="bi bi-telephone"></i></div>
                     <input id="informationChange" disabled type="text" class="form-control"
                         placeholder="+62 1298 9182">
-                        
                 </div>
             </div>
             <div style="margin-left: 17%" class="form-check mt-2">
